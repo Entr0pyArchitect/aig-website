@@ -1,0 +1,345 @@
+/*
+  AIG mobile-only polish layer.
+  Scope: mobile/tablet layout and social preview metadata support only.
+  Desktop layout is intentionally untouched; every visual override below is
+  constrained to max-width media queries.
+*/
+
+@media (max-width: 820px) {
+  html,
+  body,
+  #root,
+  .site-shell {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .page-frame,
+  .main-surface,
+  .retro-panel,
+  .hero-frame,
+  .dashboard-grid,
+  .center-column,
+  .left-column,
+  .right-column,
+  .section-intro,
+  .product-detail-shell,
+  .product-detail-grid,
+  .product-grid,
+  .service-grid,
+  .resource-grid,
+  .invoice-grid,
+  .checkout-layout,
+  .checkout-grid,
+  .checkout-items,
+  .checkout-item,
+  .cart-grid,
+  .cart-panel,
+  .policy-grid,
+  .policy-panel,
+  .product-card,
+  .service-card,
+  .soft-card,
+  .invoice-box,
+  .method-detail-card,
+  .payment-method-grid,
+  .paypal-checkout-panel,
+  .paypal-embedded-details,
+  .paypal-provider-surface,
+  .paypal-smart-buttons,
+  .cashapp-manual-panel,
+  .contact-form,
+  .quote-context {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .dashboard-grid,
+  .product-detail-shell,
+  .product-detail-grid,
+  .product-grid,
+  .service-grid,
+  .resource-grid,
+  .invoice-grid,
+  .checkout-layout,
+  .payment-method-grid,
+  .cart-grid,
+  .policy-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .section-intro,
+  .hero-card,
+  .product-card,
+  .service-card,
+  .soft-card,
+  .invoice-box,
+  .policy-panel,
+  .method-detail-card {
+    overflow: hidden;
+  }
+
+  .section-intro p,
+  .hero-copy p,
+  .hero-card p,
+  .product-card p,
+  .service-card p,
+  .soft-card p,
+  .invoice-box p,
+  .method-detail-card p,
+  .checkout-item p,
+  .policy-panel p,
+  .policy-panel li,
+  .resource-card p,
+  .quote-context p {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .product-card h3,
+  .service-card h3,
+  .soft-card h3,
+  .product-detail-copy h1,
+  .checkout-hero h1,
+  .section-intro h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .category-filter,
+  .category-pills,
+  .button-row,
+  .product-actions,
+  .detail-actions,
+  .checkout-action-row,
+  .checkout-navigation-bar,
+  .paypal-hosted-actions,
+  .cart-actions,
+  .policy-tabs {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .category-filter,
+  .category-pills,
+  .policy-tabs {
+    display: flex;
+    flex-wrap: wrap !important;
+    gap: 10px;
+    overflow-x: visible !important;
+    padding-bottom: 0 !important;
+  }
+
+  .category-filter button,
+  .category-pills span,
+  .policy-tabs button {
+    flex: 1 1 auto !important;
+    max-width: 100%;
+    min-width: min(100%, 9rem);
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+  }
+
+  .product-actions,
+  .detail-actions,
+  .button-row,
+  .checkout-action-row,
+  .checkout-navigation-bar,
+  .cart-actions,
+  .paypal-hosted-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .retro-button,
+  button.retro-button,
+  a.retro-button,
+  .product-actions .retro-button,
+  .detail-actions .retro-button,
+  .button-row .retro-button,
+  .checkout-action-row .retro-button,
+  .checkout-navigation-bar .retro-button,
+  .paypal-hosted-actions .retro-button,
+  .cart-actions .retro-button {
+    box-sizing: border-box;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 0;
+    text-align: center;
+    white-space: normal !important;
+    width: 100% !important;
+  }
+
+  .invoice-line,
+  .paypal-ticket-grid .invoice-line,
+  .checkout-item {
+    grid-template-columns: 1fr !important;
+    min-width: 0;
+  }
+
+  .invoice-line strong,
+  .invoice-line span,
+  .checkout-item strong,
+  .checkout-item span,
+  code {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  input,
+  select,
+  textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-frame {
+    width: min(100% - 12px, 1180px) !important;
+    margin-top: 8px !important;
+  }
+
+  .main-surface {
+    overflow: hidden;
+  }
+
+  .hero-frame,
+  .retro-panel,
+  .invoice-box,
+  .product-card,
+  .service-card,
+  .soft-card,
+  .policy-panel {
+    padding: clamp(12px, 4vw, 18px) !important;
+  }
+
+  /* Keep the homepage identity big, but make inner pages phone-safe. */
+  .section-intro--catalog h1,
+  .section-intro--services h1,
+  .section-intro--secondary h1,
+  .section-intro--policy h1,
+  .checkout-hero h1,
+  .product-detail-shell .section-intro h1 {
+    font-size: clamp(1.68rem, 8.4vw, 2.28rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: 0.01em !important;
+    max-width: 100% !important;
+  }
+
+  .section-intro--catalog p,
+  .section-intro--services p,
+  .section-intro--secondary p,
+  .section-intro--policy p,
+  .checkout-hero p,
+  .product-detail-shell .section-intro p {
+    font-size: clamp(0.98rem, 4.2vw, 1.08rem) !important;
+    line-height: 1.55 !important;
+  }
+
+  .product-card h3,
+  .service-card h3,
+  .soft-card h3,
+  .invoice-box h3,
+  .policy-panel h2 {
+    font-size: clamp(1.12rem, 5.6vw, 1.55rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .main-nav {
+    grid-auto-columns: minmax(112px, 1fr) !important;
+  }
+
+  .main-nav a {
+    min-width: 112px;
+    padding-inline: 10px !important;
+    white-space: nowrap;
+  }
+
+  .product-card-header {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+
+  .product-card-header span,
+  .popularity-badge,
+  .compliance-note {
+    overflow-wrap: anywhere;
+  }
+
+  .category-pills span,
+  .category-filter button {
+    font-size: 0.78rem !important;
+    letter-spacing: 0.07em !important;
+    padding: 10px 12px !important;
+  }
+
+  .checkout-status-rail {
+    grid-template-columns: 1fr 1fr !important;
+    overflow: hidden !important;
+  }
+
+  .checkout-status-rail span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* PayPal/card mobile readability: light provider surface behind PayPal fields, no inversion. */
+  .paypal-provider-surface {
+    background: #f8fbff !important;
+    border-radius: 10px !important;
+    color: #111827 !important;
+    color-scheme: light !important;
+    margin-inline: auto !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    padding: 12px !important;
+  }
+
+  .paypal-provider-surface .paypal-smart-buttons {
+    background: #ffffff !important;
+    color: #111827 !important;
+    color-scheme: light !important;
+    max-width: 100% !important;
+    min-height: 120px;
+    overflow: visible !important;
+    padding: 10px !important;
+  }
+
+  .paypal-provider-surface .paypal-button-container,
+  .paypal-provider-surface div[id^="paypal-buttons-"] {
+    background: #ffffff !important;
+    color-scheme: light !important;
+    max-width: 100% !important;
+    min-height: 56px;
+    overflow: visible !important;
+  }
+
+  .paypal-provider-surface iframe {
+    background-color: #ffffff !important;
+    color-scheme: light !important;
+    display: block !important;
+    filter: none !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Do not invert PayPal country/phone selector, flags, or provider icons. */
+  .paypal-provider-surface img,
+  .paypal-provider-surface svg,
+  .paypal-provider-surface select,
+  .paypal-provider-surface [role="combobox"],
+  .paypal-provider-surface [aria-haspopup="listbox"] {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    color-scheme: light !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+}

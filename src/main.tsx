@@ -13,6 +13,7 @@ import "./styles/aig-responsive-device-fit.css";
 import "./styles/aig-page-header-slimming.css";
 import "./styles/aig-checkout-payment-hotfix.css";
 import "./styles/aig-final-live-polish.css";
+import "./styles/aig-mobile-specific-polish.css";
 
 /*
   Frontend application bootstrap.
