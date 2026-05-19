@@ -1,0 +1,51 @@
+/*
+  AIG page header slimming pass.
+  Purpose: keep the home page hero large while reducing oversized inner-page
+  section headings for Products, Services, Resources, About, Contact, and Policies.
+*/
+
+.section-intro--catalog,
+.section-intro--services {
+  max-width: 820px;
+}
+
+.section-intro--catalog h1,
+.section-intro--services h1 {
+  font-size: clamp(2.15rem, 4.9vw, 3.75rem);
+  line-height: 1.06;
+  max-width: 780px;
+}
+
+.section-intro--secondary {
+  max-width: 860px;
+}
+
+.section-intro--secondary h1 {
+  font-size: clamp(2.05rem, 4.5vw, 4.05rem);
+  line-height: 1.07;
+  max-width: 840px;
+}
+
+.section-intro--policy {
+  max-width: 820px;
+}
+
+.section-intro--policy h1 {
+  font-size: clamp(1.95rem, 4.2vw, 3.45rem);
+  line-height: 1.08;
+  max-width: 800px;
+}
+
+.policy-panel h2 {
+  font-size: clamp(1.55rem, 3.2vw, 2.45rem);
+  line-height: 1.12;
+}
+
+@media (max-width: 640px) {
+  .section-intro--catalog h1,
+  .section-intro--services h1,
+  .section-intro--secondary h1,
+  .section-intro--policy h1 {
+    font-size: clamp(1.9rem, 10vw, 2.55rem);
+  }
+}

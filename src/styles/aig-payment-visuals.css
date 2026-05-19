@@ -1,0 +1,759 @@
+/*
+  Public frontend visual corrections.
+  Scope: site underlay, original top signal bar, payment icons, and policy tabs.
+*/
+
+/* ---------- Blue network underlay for dead space ---------- */
+body::after {
+  background-image:
+    linear-gradient(rgba(3, 8, 14, 0.46), rgba(3, 8, 14, 0.68)),
+    url("/assets/images/site/aig-network-underlay.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  opacity: 0.62;
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+}
+
+.page-frame {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Original top bar carries the animated AIG signal feed ---------- */
+.top-transmission {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.top-transmission > span {
+  display: none;
+}
+
+.signal-track {
+  animation: aig-signal-feed 34s linear infinite;
+  display: inline-flex;
+  gap: 42px;
+  min-width: max-content;
+}
+
+.signal-track span {
+  color: #9df7c4;
+  font-family: var(--font-mono, "Courier New", monospace);
+  letter-spacing: 0.14em;
+  text-shadow: 0 0 12px rgba(157, 247, 196, 0.18);
+  text-transform: uppercase;
+}
+
+@keyframes aig-signal-feed {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- Payment icons: corrected mapping and larger PayPal readability ---------- */
+.payment-method-card img,
+.payment-method-card img.payment-method-logo {
+  max-height: none !important;
+  max-width: none !important;
+}
+
+.payment-method-logo {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(126, 200, 255, 0.18);
+  border-radius: 8px;
+  display: block;
+  height: 50px;
+  margin: 0 auto 10px;
+  object-fit: contain;
+  padding: 7px;
+  width: 92px;
+}
+
+
+
+.payment-method-logo[src*="bitcoin"] {
+  height: 52px;
+  width: 92px;
+}
+
+.payment-method-logo[src*="cashapp"] {
+  height: 52px;
+  width: 92px;
+}
+
+.payment-method-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.payment-method-card span {
+  color: #9df7c4;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ---------- Policy tabs: public-facing, no internal workflow checklist ---------- */
+.policy-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.policy-tabs button {
+  background: linear-gradient(180deg, rgba(16, 45, 70, 0.9), rgba(6, 18, 30, 0.92));
+  border: 1px solid rgba(126, 200, 255, 0.3);
+  color: #d8e6ec;
+  cursor: pointer;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.policy-tabs button:hover,
+.policy-tabs button.active {
+  border-color: rgba(157, 247, 196, 0.55);
+  box-shadow: 0 0 24px rgba(126, 200, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.policy-panel {
+  background: rgba(3, 10, 18, 0.68);
+  border: 1px solid rgba(126, 200, 255, 0.24);
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.policy-panel h2 {
+  color: var(--white, #eff7ff);
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.policy-panel p,
+.policy-panel li {
+  color: var(--muted, #b7c8d4);
+  line-height: 1.65;
+}
+
+.policy-accordion {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.policy-accordion details {
+  background: rgba(2, 7, 13, 0.65);
+  border: 1px solid rgba(126, 200, 255, 0.24);
+  padding: 14px 16px;
+}
+
+.policy-accordion summary {
+  color: #9df7c4;
+  cursor: pointer;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  body::after {
+    background-position: center center;
+    opacity: 0.42;
+  }
+
+  .payment-method-logo,
+  .payment-method-logo[src*="bitcoin"],
+  .payment-method-logo[src*="cashapp"] {
+    height: 44px;
+    width: 80px;
+  }
+
+  
+}
+
+
+/* ---------- Final early-2000s terminal polish ---------- */
+.vista-terminal {
+  background:
+    linear-gradient(180deg, rgba(18, 54, 82, 0.92), rgba(6, 14, 24, 0.95)),
+    repeating-linear-gradient(to bottom, rgba(255,255,255,0.025) 0 1px, transparent 1px 4px);
+  border: 1px solid rgba(126, 200, 255, 0.34);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+    0 18px 38px rgba(0,0,0,0.28),
+    0 0 22px rgba(107,183,255,0.08);
+  overflow: hidden;
+}
+
+.vista-terminal-titlebar {
+  align-items: center;
+  background:
+    linear-gradient(180deg, rgba(76, 142, 202, 0.55), rgba(13, 48, 82, 0.82) 48%, rgba(5, 22, 39, 0.96));
+  border-bottom: 1px solid rgba(126, 200, 255, 0.35);
+  color: #eef6ff;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 600;
+  gap: 10px;
+  letter-spacing: 0.02em;
+  padding: 8px 10px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.75);
+}
+
+.vista-orb {
+  background:
+    radial-gradient(circle at 35% 30%, #d7f1ff 0 7%, #77c7ff 13%, #1d6fb8 42%, #082b4a 72%);
+  border: 1px solid rgba(220,245,255,0.5);
+  border-radius: 999px;
+  box-shadow: 0 0 12px rgba(107,183,255,0.45);
+  height: 17px;
+  width: 17px;
+}
+
+.vista-window-buttons {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.vista-window-buttons span {
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(9,24,39,0.7));
+  border: 1px solid rgba(220,245,255,0.22);
+  color: #dbeeff;
+  display: inline-flex;
+  font-size: 0.72rem;
+  height: 18px;
+  justify-content: center;
+  line-height: 1;
+  width: 24px;
+}
+
+.vista-terminal-screen {
+  background:
+    radial-gradient(circle at 18% 10%, rgba(107,183,255,0.09), transparent 18rem),
+    linear-gradient(180deg, rgba(0,0,0,0.78), rgba(0,0,0,0.92));
+  color: #e8f4ff;
+  font-family: Consolas, "Lucida Console", "Courier New", monospace;
+  min-height: 282px;
+  padding: 18px 20px 20px;
+  position: relative;
+}
+
+.vista-terminal-screen::after {
+  background: repeating-linear-gradient(to bottom, rgba(255,255,255,0.035) 0 1px, transparent 1px 5px);
+  content: "";
+  inset: 0;
+  mix-blend-mode: screen;
+  opacity: 0.16;
+  pointer-events: none;
+  position: absolute;
+}
+
+.vista-terminal-header,
+.vista-line {
+  animation: vista-line-in 260ms ease both;
+  font-size: clamp(0.88rem, 1.4vw, 1.05rem);
+  line-height: 1.65;
+  position: relative;
+  z-index: 1;
+}
+
+.vista-terminal-header {
+  color: #a8d5ff;
+  opacity: 0.78;
+}
+
+.vista-line.command {
+  color: #eaf7ff;
+}
+
+.vista-line.success {
+  color: #9df7c4;
+}
+
+.vista-line.progress {
+  color: #ffd27d;
+}
+
+.vista-line.muted {
+  color: #b8cbe0;
+}
+
+.vista-cursor {
+  color: transparent;
+  margin-left: 4px;
+}
+
+.vista-cursor.active {
+  color: #9df7c4;
+  text-shadow: 0 0 10px rgba(157,247,196,0.42);
+}
+
+@keyframes vista-line-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Final PayPal icon correction ---------- */
+.payment-method-logo[src*="paypal"] {
+  height: 70px;
+  padding: 6px 10px;
+  width: 168px;
+}
+
+.payment-method-card:has(.payment-method-logo[src*="paypal"]) {
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .payment-method-logo[src*="paypal"] {
+    height: 58px;
+    width: 136px;
+  }
+
+  .vista-terminal-screen {
+    min-height: 245px;
+    padding: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vista-line,
+  .vista-terminal-header,
+  .signal-track {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+
+/* ---------- Backend/product phase frontend polish ---------- */
+.product-accordion {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.catalog-dropdown {
+  background:
+    linear-gradient(180deg, rgba(8, 20, 32, 0.78), rgba(3, 9, 16, 0.92));
+  border: 1px solid rgba(126, 200, 255, 0.28);
+  box-shadow: 0 0 26px rgba(107, 183, 255, 0.07);
+  overflow: hidden;
+}
+
+.catalog-dropdown summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 16px 18px;
+}
+
+.catalog-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.catalog-dropdown summary span {
+  color: #eef6ff;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.catalog-dropdown summary em {
+  color: #9df7c4;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.82rem;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.catalog-dropdown > p {
+  border-top: 1px solid rgba(126, 200, 255, 0.18);
+  color: #a8b8c8;
+  margin: 0;
+  padding: 0 18px 16px;
+}
+
+.catalog-dropdown[open] .product-grid {
+  animation: catalog-open 240ms ease both;
+}
+
+@keyframes catalog-open {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.popularity-badge {
+  border: 1px solid rgba(157, 247, 196, 0.22);
+  color: #9df7c4;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  margin: 12px 0;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+
+.popularity-badge.muted {
+  border-color: rgba(126, 200, 255, 0.18);
+  color: #8da4b5;
+}
+
+.product-card.cart-pulse {
+  animation: cart-pulse 560ms ease;
+  border-color: rgba(157, 247, 196, 0.72) !important;
+}
+
+@keyframes cart-pulse {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.015); box-shadow: 0 0 34px rgba(157, 247, 196, 0.18); }
+  100% { transform: scale(1); }
+}
+
+.product-detail-shell {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+}
+
+.product-detail-panel {
+  background: rgba(3, 10, 18, 0.68);
+  border: 1px solid rgba(126, 200, 255, 0.24);
+  padding: 18px;
+}
+
+.product-detail-grid,
+.resource-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.detail-actions {
+  margin-top: 24px;
+}
+
+.resource-card {
+  background: rgba(3, 10, 18, 0.68);
+  border: 1px solid rgba(126, 200, 255, 0.24);
+  padding: 20px;
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.resource-card:hover {
+  border-color: rgba(157, 247, 196, 0.44);
+  box-shadow: 0 0 28px rgba(126, 200, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.resource-card h3 {
+  color: #eef6ff;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.resource-card p {
+  color: #a8b8c8;
+}
+
+@media (max-width: 820px) {
+  .product-detail-shell,
+  .product-detail-grid,
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-dropdown summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+/* ---------- Product button formatting pass ---------- */
+/*
+  Keeps the current retro visual language, but forces product card actions into
+  clean rows so buttons do not float unevenly across different card heights.
+*/
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .feature-list {
+  flex: 1 1 auto;
+}
+
+.product-actions {
+  align-items: stretch !important;
+  border-top: 1px solid rgba(126, 200, 255, 0.16);
+  display: grid !important;
+  gap: 12px !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: stretch !important;
+  margin-top: auto !important;
+  padding-top: 16px;
+  width: 100%;
+}
+
+.product-actions strong {
+  align-items: center;
+  color: var(--white, #eef6ff);
+  display: flex;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.96rem;
+  grid-column: 1 / -1;
+  letter-spacing: 0.04em;
+  min-height: 28px;
+  text-transform: uppercase;
+}
+
+.product-actions .retro-button {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.product-actions .retro-button:last-child:nth-child(4),
+.product-actions .retro-button:last-child:nth-child(5) {
+  grid-column: 1 / -1;
+}
+
+.product-card .compliance-note {
+  margin-top: auto;
+}
+
+.detail-actions {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.detail-actions .retro-button {
+  width: auto;
+}
+
+@media (max-width: 780px) {
+  .product-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .product-actions .retro-button,
+  .product-actions .retro-button:last-child:nth-child(4),
+  .product-actions .retro-button:last-child:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+
+/* ---------- Cash App QR checkout panel ---------- */
+.cashapp-manual-panel {
+  align-items: center;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) 220px;
+}
+
+.cashapp-manual-copy p,
+.cashapp-next-steps p {
+  color: #a8b8c8;
+}
+
+.cashapp-qr-frame {
+  align-items: center;
+  background:
+    linear-gradient(180deg, rgba(246, 255, 249, 0.97), rgba(220, 242, 229, 0.96));
+  border: 1px solid rgba(157, 247, 196, 0.36);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.28) inset,
+    0 0 28px rgba(0, 214, 64, 0.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+}
+
+.cashapp-qr-frame img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.cashapp-qr-frame span {
+  color: #053c16;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-top: 8px;
+}
+
+.cashapp-next-steps {
+  display: grid;
+  gap: 12px;
+}
+
+@media (max-width: 760px) {
+  .cashapp-manual-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .cashapp-qr-frame {
+    max-width: 240px;
+  }
+}
+
+
+/* ---------- Cash App QR sizing + global readability hotfix ---------- */
+.cashapp-manual-panel {
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) 184px;
+}
+
+.cashapp-qr-frame {
+  margin-inline: auto;
+  max-width: 184px;
+  padding: 10px;
+}
+
+.cashapp-qr-frame img {
+  max-width: 160px;
+}
+
+.cashapp-manual-copy p,
+.cashapp-next-steps p,
+.hero-copy,
+.hero-copy p,
+.section-intro p,
+.invoice-box p,
+.product-card p,
+.service-card p,
+.status-panel ul,
+.quote-context p,
+.policy-panel p,
+.policy-panel li,
+.small-muted,
+.checkout-item p {
+  color: #c7d7e3 !important;
+  font-weight: 500;
+}
+
+.top-transmission,
+.main-nav a,
+.category-filter button,
+.category-pills span,
+.payment-method-card span,
+.status-panel ul,
+.small-muted,
+.side-links a,
+.metric-list span,
+.checkout-item span,
+.retro-button {
+  font-weight: 700;
+}
+
+.payment-method-card strong,
+.product-card h3,
+.service-card h3,
+.invoice-box h3,
+.panel-title,
+.status-title {
+  color: #eef6ff;
+  text-shadow: 0 0 10px rgba(126, 200, 255, 0.08);
+}
+
+.category-filter button,
+.main-nav a,
+.side-links a,
+.policy-tabs button {
+  color: #d8e6ec;
+}
+
+.retro-button,
+.category-filter button,
+.policy-tabs button,
+.main-nav a {
+  text-shadow: 0 0 8px rgba(126, 200, 255, 0.08);
+}
+
+@media (max-width: 760px) {
+  .cashapp-manual-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .cashapp-qr-frame {
+    max-width: 200px;
+  }
+
+  .cashapp-qr-frame img {
+    max-width: 176px;
+  }
+}
+
+
+/* ---------- Mobile surfability pre-audit ---------- */
+@media (max-width: 760px) {
+  .page-frame {
+    width: min(100% - 14px, 1180px);
+    margin-inline: auto;
+  }
+
+  .hero-frame,
+  .checkout-layout,
+  .product-detail-shell {
+    grid-template-columns: 1fr !important;
+  }
+
+  .main-nav {
+    scroll-snap-type: x proximity;
+  }
+
+  .main-nav a {
+    scroll-snap-align: start;
+  }
+
+  .invoice-line {
+    align-items: flex-start;
+    gap: 6px;
+    grid-template-columns: 1fr;
+  }
+
+  input,
+  select,
+  textarea,
+  button,
+  .retro-button {
+    font-size: 16px;
+  }
+}

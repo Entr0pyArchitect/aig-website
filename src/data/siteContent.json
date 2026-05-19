@@ -1,0 +1,1032 @@
+{
+  "company": {
+    "name": "American Innovations Group",
+    "shortName": "AIG",
+    "tagline": "Engineering Art",
+    "summary": "American Innovations Group builds quote-based hardware, software, cybersecurity, industrial, and technical solutions for customers with real specifications.",
+    "positioning": "Practical engineering for custom hardware, software, and security-focused solutions\u2014scoped carefully around customer requirements, approved quotes, and clean delivery.",
+    "locationMode": "Online-first service with local support capability."
+  },
+  "phase": {
+    "name": "Quote-First Engineering",
+    "next": "Customer Scope Review",
+    "summary": "Public quote and product flow for customer-defined technology requirements."
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Resources",
+      "href": "/resources"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Cart",
+      "href": "/cart"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Embedded systems",
+      "description": "Controllers, PCBs, hardware interfaces, signal tools, and electronics-centered builds."
+    },
+    {
+      "name": "Industrial equipment",
+      "description": "Motor systems, cooling, controls, apparatus planning, and rugged technical support."
+    },
+    {
+      "name": "Manufacturing equipment",
+      "description": "Build-ready hardware planning, sourcing paths, fixtures, control modules, and production support."
+    },
+    {
+      "name": "Software solutions",
+      "description": "Automation, dashboards, APIs, customer workflows, internal tools, and hardware-supporting software."
+    },
+    {
+      "name": "Cybersecurity solutions",
+      "description": "Authorized security audits, scoped penetration testing, security tooling, and defensive software support."
+    }
+  ],
+  "audiences": [
+    {
+      "title": "Makers",
+      "description": "Builder-friendly support, project planning, documentation, and technical direction for hands-on development."
+    },
+    {
+      "title": "Tech Hobbyists",
+      "description": "Retro-inspired tools, experimental builds, and education-focused content for people who learn by building."
+    },
+    {
+      "title": "Small Businesses",
+      "description": "Affordable automation, workflow cleanup, technical tooling, and support without enterprise bloat."
+    },
+    {
+      "title": "Industry Professionals",
+      "description": "Embedded system planning, industrial support, low-downtime technical solutions, and productization guidance."
+    }
+  ],
+  "products": [
+    {
+      "id": 201,
+      "slug": "custom-electric-motors",
+      "name": "Custom Electric Motors",
+      "shortName": "Electric Motors",
+      "description": "Electric motors built or sourced around customer-defined specifications, including voltage, torque, RPM, size constraints, shaft style, mounting needs, duty cycle, and operating environment.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "hardware",
+      "status": "quoted",
+      "categories": [
+        "Embedded systems",
+        "Industrial equipment",
+        "Manufacturing equipment"
+      ],
+      "quoteCta": "Request motor quote",
+      "quotePrompt": "Tell us voltage, torque, RPM, size limits, shaft style, mounting pattern, quantity, duty cycle, and operating environment.",
+      "features": [
+        "Customer-defined motor specifications",
+        "Voltage, torque, and RPM planning",
+        "Mechanical fit and mounting review",
+        "Application-focused sourcing/build path"
+      ],
+      "productCode": "AIG-HW-MOTOR"
+    },
+    {
+      "id": 202,
+      "slug": "control-pcb-nema-stepper-motors",
+      "name": "Control PCB for NEMA Stepper Motors",
+      "shortName": "NEMA Stepper Control PCB",
+      "description": "Control PCB planning for NEMA stepper motor applications, including driver selection, control inputs, power requirements, protection considerations, and integration planning.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "hardware",
+      "status": "quoted",
+      "categories": [
+        "Embedded systems",
+        "Industrial equipment",
+        "Manufacturing equipment"
+      ],
+      "quoteCta": "Request NEMA PCB quote",
+      "quotePrompt": "Tell us motor size, current/voltage requirements, controller interface, expected load, quantity, and enclosure constraints.",
+      "features": [
+        "Stepper driver planning",
+        "Power and control interface review",
+        "Prototype-ready PCB direction",
+        "Application-specific integration support"
+      ],
+      "productCode": "AIG-HW-NEMA-PCB"
+    },
+    {
+      "id": 203,
+      "slug": "water-cooling-blocks",
+      "name": "Water Cooling Blocks",
+      "shortName": "Water Cooling Blocks",
+      "description": "Custom or application-specific water cooling block planning for electronics, prototypes, industrial equipment, and thermal management experiments.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "hardware",
+      "status": "quoted",
+      "categories": [
+        "Industrial equipment",
+        "Manufacturing equipment"
+      ],
+      "quoteCta": "Request cooling block quote",
+      "quotePrompt": "Tell us heat source, dimensions, flow path needs, material preference, fittings, coolant, quantity, and mounting requirements.",
+      "features": [
+        "Thermal requirement review",
+        "Material and fitting planning",
+        "Mounting and dimensional constraints",
+        "Prototype/manufacturing path support"
+      ],
+      "productCode": "AIG-HW-COOLING"
+    },
+    {
+      "id": 204,
+      "slug": "pcb-design-customer-applications",
+      "name": "PCB Design for Customer Applications",
+      "shortName": "Custom PCB Design",
+      "description": "PCB design support for customer applications, prototypes, embedded builds, controller boards, sensor modules, adapters, and product proof-of-concepts.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "hardware",
+      "status": "quoted",
+      "categories": [
+        "Embedded systems",
+        "Manufacturing equipment"
+      ],
+      "quoteCta": "Request PCB design quote",
+      "quotePrompt": "Tell us board purpose, components, size limits, I/O, voltage/current, quantity, timeline, and whether you need schematics, layout, or fabrication files.",
+      "features": [
+        "Prototype PCB planning",
+        "Embedded system support",
+        "Design-for-build documentation",
+        "Quote-based board/project scope"
+      ],
+      "productCode": "AIG-HW-PCB"
+    },
+    {
+      "id": 205,
+      "slug": "stepper-motor-controller",
+      "name": "Stepper Motor Controller",
+      "shortName": "Stepper Motor Controller",
+      "description": "Stepper motor controller planning and build support for motion projects, machine interfaces, automation concepts, and embedded control systems.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "hardware",
+      "status": "quoted",
+      "categories": [
+        "Embedded systems",
+        "Industrial equipment",
+        "Manufacturing equipment"
+      ],
+      "quoteCta": "Request controller quote",
+      "quotePrompt": "Tell us axis count, motor type, power requirements, control method, enclosure needs, feedback/sensor requirements, and expected environment.",
+      "features": [
+        "Motion-control planning",
+        "Driver/controller selection",
+        "Embedded firmware direction",
+        "Industrial/maker application support"
+      ],
+      "productCode": "AIG-HW-STEPPER"
+    },
+    {
+      "id": 206,
+      "slug": "software-solutions",
+      "name": "Software Solutions",
+      "shortName": "Software",
+      "description": "Software solutions for dashboards, automation, workflow tools, internal utilities, technical interfaces, and hardware-supporting applications.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "software",
+      "status": "quoted",
+      "categories": [
+        "Software solutions"
+      ],
+      "quoteCta": "Request software quote",
+      "quotePrompt": "Tell us the workflow, users, must-have features, platform, integrations, timeline, and whether the software supports hardware or internal operations.",
+      "features": [
+        "Workflow automation",
+        "Dashboard/interface planning",
+        "Platform/API direction",
+        "Documentation and handoff support"
+      ],
+      "productCode": "AIG-SW-SOLUTIONS"
+    },
+    {
+      "id": 207,
+      "slug": "technical-consulting",
+      "name": "Technical Consulting",
+      "shortName": "Consulting",
+      "description": "Technical consulting for hardware concepts, embedded systems, manufacturing planning, software decisions, architecture reviews, and project direction.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Embedded systems",
+        "Industrial equipment",
+        "Manufacturing equipment",
+        "Software solutions"
+      ],
+      "quoteCta": "Request consulting quote",
+      "quotePrompt": "Tell us the problem, current stage, constraints, timeline, budget range if known, and what decision or deliverable you need help with.",
+      "features": [
+        "Architecture review",
+        "Project scoping",
+        "Sourcing/manufacturing direction",
+        "Next-step technical roadmap"
+      ],
+      "productCode": "AIG-CONSULT"
+    },
+    {
+      "id": 208,
+      "slug": "scientific-apparatus",
+      "name": "Scientific Apparatus",
+      "shortName": "Scientific Apparatus",
+      "description": "Scientific apparatus planning for lab-style prototypes, measurement setups, experimental tooling, fixtures, control systems, and research-support hardware.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "hardware",
+      "status": "quoted",
+      "categories": [
+        "Embedded systems",
+        "Industrial equipment",
+        "Manufacturing equipment"
+      ],
+      "quoteCta": "Request apparatus quote",
+      "quotePrompt": "Tell us the experiment/application, required measurements, environmental constraints, materials, controls, timeline, and documentation needs.",
+      "features": [
+        "Lab/prototype hardware planning",
+        "Measurement and control support",
+        "Custom fixture direction",
+        "Documentation-focused development"
+      ],
+      "productCode": "AIG-HW-APPARATUS"
+    },
+    {
+      "id": 209,
+      "slug": "signal-analyzer",
+      "name": "Signal Analyzer",
+      "shortName": "Signal Analyzer",
+      "description": "Embedded signal analysis concept for lawful lab testing, electronics diagnostics, education, and authorized security research. Designed for legitimate analysis workflows only.",
+      "priceCents": 0,
+      "priceLabel": "TBA",
+      "pricingModel": "tba",
+      "type": "hardware",
+      "status": "tba",
+      "categories": [
+        "Embedded systems"
+      ],
+      "quoteCta": "Request signal analyzer info",
+      "quotePrompt": "Tell us the signal types, lawful test environment, measurement goals, interfaces, bandwidth needs, and project constraints.",
+      "complianceNote": "For lawful testing, owned equipment, lab diagnostics, education, and authorized research only.",
+      "features": [
+        "Embedded signal diagnostics",
+        "Lab and education focus",
+        "Authorized research workflow",
+        "Compliance-first project scoping"
+      ],
+      "productCode": "AIG-HW-SIGNAL"
+    },
+    {
+      "id": 210,
+      "productCode": "CYB-CONSULT",
+      "slug": "cybersecurity-consultation-strategy",
+      "name": "Cybersecurity Consultation and Strategy",
+      "shortName": "Cybersecurity Consultation",
+      "description": "General cybersecurity consulting for individuals, students, creators, small businesses, and technical teams that need direction, planning, or security guidance.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Request consultation",
+      "quotePrompt": "Tell us the environment, goals, current concerns, user count, account/platform scope, timeline, and what decisions you need help making.",
+      "complianceNote": "Authorized advisory work only. No unauthorized access, credential theft, or harmful activity.",
+      "features": [
+        "Security posture review",
+        "Risk-priority list",
+        "Tool and workflow guidance",
+        "Written summary report"
+      ]
+    },
+    {
+      "id": 211,
+      "productCode": "CYB-PENTEST",
+      "slug": "penetration-testing-security-audit",
+      "name": "Penetration Testing and Security Audit",
+      "shortName": "Penetration Testing",
+      "description": "Authorized security testing for systems, websites, applications, networks, and business environments before attackers can exploit weaknesses.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request pentest quote",
+      "quotePrompt": "Tell us the authorized scope, testing window, rules of engagement, target type, business goals, reporting needs, and approval contact.",
+      "complianceNote": "Written authorization and rules of engagement are required before any testing.",
+      "features": [
+        "Scope and authorization review",
+        "Risk-ranked findings",
+        "Evidence and screenshots where appropriate",
+        "Remediation guidance"
+      ]
+    },
+    {
+      "id": 212,
+      "productCode": "CYB-VA",
+      "slug": "vulnerability-assessment",
+      "name": "Vulnerability Assessment",
+      "shortName": "Vulnerability Assessment",
+      "description": "Lower-cost review focused on identifying, prioritizing, and explaining vulnerabilities without deep exploitation.",
+      "priceCents": 0,
+      "priceLabel": "$500+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request assessment",
+      "quotePrompt": "Tell us the systems, websites, devices, or accounts to review, ownership/authorization, and reporting expectations.",
+      "complianceNote": "Authorized systems only. Exploitation depth must be agreed in writing.",
+      "features": [
+        "Asset review",
+        "Vulnerability discovery",
+        "Manual verification notes",
+        "Remediation checklist"
+      ]
+    },
+    {
+      "id": 213,
+      "productCode": "CYB-DFIR",
+      "slug": "digital-forensics-incident-response",
+      "name": "Digital Forensics and Incident Response",
+      "shortName": "Digital Forensics",
+      "description": "Investigation and triage support for suspicious activity, compromised accounts, unusual device behavior, exposed credentials, and security incidents.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request incident triage",
+      "quotePrompt": "Tell us what happened, affected accounts/devices, timeline, available evidence, urgency, and legal/evidence-handling needs.",
+      "complianceNote": "Legal-sensitive matters may require certified forensic or legal professionals.",
+      "features": [
+        "Incident intake",
+        "Evidence inventory",
+        "Timeline reconstruction",
+        "Recovery recommendations"
+      ]
+    },
+    {
+      "id": 214,
+      "productCode": "CYB-HARDEN",
+      "slug": "windows-linux-hardening",
+      "name": "Windows and Linux Hardening",
+      "shortName": "System Hardening",
+      "description": "Security hardening for Windows 11 systems, Linux desktops, Kali lab systems, servers, and development machines.",
+      "priceCents": 0,
+      "priceLabel": "$250+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Request hardening quote",
+      "quotePrompt": "Tell us the operating systems, device count, user roles, current risks, and whether the work is personal, lab, or business-focused.",
+      "complianceNote": "Hardening recommendations depend on ownership, business needs, and backup readiness.",
+      "features": [
+        "Account review",
+        "Firewall review",
+        "Logging basics",
+        "Backup and encryption guidance"
+      ]
+    },
+    {
+      "id": 215,
+      "productCode": "CYB-NET",
+      "slug": "network-wifi-security-review",
+      "name": "Network and Wi-Fi Security Review",
+      "shortName": "Network Security Review",
+      "description": "Review of routers, Wi-Fi configuration, segmentation, exposed services, firewall posture, guest networks, and small-business or home-lab topology.",
+      "priceCents": 0,
+      "priceLabel": "$300+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions",
+        "Industrial equipment"
+      ],
+      "quoteCta": "Request network review",
+      "quotePrompt": "Tell us the network size, router/Wi-Fi setup, ownership, business goals, and whether segmentation or monitoring is needed.",
+      "complianceNote": "Authorized networks only. No testing against third-party networks.",
+      "features": [
+        "Network map",
+        "Router/Wi-Fi review",
+        "Segmentation recommendations",
+        "Security improvement checklist"
+      ]
+    },
+    {
+      "id": 216,
+      "productCode": "CYB-GH",
+      "slug": "secure-software-github-review",
+      "name": "Secure Software and GitHub Security Review",
+      "shortName": "GitHub Security Review",
+      "description": "Security-focused review of codebases, GitHub repositories, scripts, websites, and project workflows.",
+      "priceCents": 0,
+      "priceLabel": "$250+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Request repo review",
+      "quotePrompt": "Tell us repository size, language stack, deployment path, whether secrets were exposed, and your release timeline.",
+      "complianceNote": "Repository access must be authorized by the owner or maintainer.",
+      "features": [
+        "Secret-scanning setup",
+        "Dependency review",
+        "Secure configuration notes",
+        "Release-readiness checklist"
+      ]
+    },
+    {
+      "id": 217,
+      "productCode": "CYB-GIT",
+      "slug": "git-hygiene-secret-prevention",
+      "name": "Git Hygiene and Secret Prevention Setup",
+      "shortName": "Git Hygiene",
+      "description": "Focused setup for preventing accidental leaks of API keys, tokens, private files, credentials, and sensitive data in Git repositories.",
+      "priceCents": 0,
+      "priceLabel": "$150+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Request Git hygiene setup",
+      "quotePrompt": "Tell us the repository platform, number of repos, current secret-scanning status, and whether cleanup guidance is needed.",
+      "complianceNote": "Do not send secrets for review. Rotate exposed secrets before remediation work.",
+      "features": [
+        "Gitignore review",
+        "Secret scanning workflow",
+        "Pre-commit checklist",
+        "Developer hygiene guide"
+      ]
+    },
+    {
+      "id": 218,
+      "productCode": "CYB-ID",
+      "slug": "cloud-account-identity-security-review",
+      "name": "Cloud, Account, and Identity Security Review",
+      "shortName": "Identity Security Review",
+      "description": "Review of MFA, recovery options, access permissions, admin roles, email security, cloud sharing, and account-security basics.",
+      "priceCents": 0,
+      "priceLabel": "$150+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Request account review",
+      "quotePrompt": "Tell us the platforms, user count, admin roles, MFA status, and business/personal account goals.",
+      "complianceNote": "Customers must own or administer the reviewed accounts.",
+      "features": [
+        "MFA review",
+        "Admin access review",
+        "Recovery planning",
+        "Email security recommendations"
+      ]
+    },
+    {
+      "id": 219,
+      "productCode": "CYB-LAB",
+      "slug": "purple-team-lab-design",
+      "name": "Purple-Team Lab Design and Training Environment Setup",
+      "shortName": "Purple-Team Lab Design",
+      "description": "Design support for safe red-team/blue-team labs used for learning, testing, detection engineering, and cybersecurity education.",
+      "priceCents": 0,
+      "priceLabel": "$300+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request lab blueprint",
+      "quotePrompt": "Tell us the student/business purpose, hardware, virtualization setup, network layout, and safe testing boundaries.",
+      "complianceNote": "Training labs must be isolated and authorized.",
+      "features": [
+        "Lab architecture diagram",
+        "VM recommendations",
+        "Safe testing rules",
+        "Learning roadmap"
+      ]
+    },
+    {
+      "id": 220,
+      "productCode": "CYB-DETECT",
+      "slug": "detection-engineering-starter-package",
+      "name": "Detection Engineering Starter Package",
+      "shortName": "Detection Engineering",
+      "description": "Starter package for basic detection logic, logging workflows, and defensive monitoring structure.",
+      "priceCents": 0,
+      "priceLabel": "$750+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Request detection package",
+      "quotePrompt": "Tell us the environment, log sources, defensive goals, lab/business context, and reporting needs.",
+      "complianceNote": "Defensive monitoring only. Data sources must be authorized.",
+      "features": [
+        "Logging recommendations",
+        "Starter detection logic",
+        "Test scenarios",
+        "Documentation template"
+      ]
+    },
+    {
+      "id": 221,
+      "productCode": "CYB-DOC",
+      "slug": "security-documentation-policy-development",
+      "name": "Security Documentation and Policy Development",
+      "shortName": "Security Documentation",
+      "description": "Professional security documents for individuals, students, startups, and small businesses building security maturity.",
+      "priceCents": 0,
+      "priceLabel": "$150+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request documentation quote",
+      "quotePrompt": "Tell us the documents needed, organization type, audience, policy requirements, and timeline.",
+      "complianceNote": "Policy templates are guidance documents and are not legal advice.",
+      "features": [
+        "Security checklist",
+        "Incident response plan",
+        "Risk register template",
+        "Policy pack options"
+      ]
+    },
+    {
+      "id": 222,
+      "productCode": "CYB-AWARE",
+      "slug": "security-awareness-training",
+      "name": "Security Awareness Training",
+      "shortName": "Security Training",
+      "description": "Practical cybersecurity training for non-technical users, students, employees, and small teams.",
+      "priceCents": 0,
+      "priceLabel": "$150+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request training",
+      "quotePrompt": "Tell us the audience, group size, preferred topics, technical level, and delivery format.",
+      "complianceNote": "Training is educational and defensive only.",
+      "features": [
+        "MFA and password training",
+        "Phishing awareness",
+        "Scam recognition",
+        "Device safety basics"
+      ]
+    },
+    {
+      "id": 223,
+      "productCode": "CYB-TUTOR",
+      "slug": "cybersecurity-tutoring-students",
+      "name": "Cybersecurity Tutoring for Students",
+      "shortName": "Cybersecurity Tutoring",
+      "description": "One-on-one or small-group tutoring for cybersecurity concepts, labs, assignments, portfolios, Linux, networking, Python, and ethical hacking basics.",
+      "priceCents": 0,
+      "priceLabel": "Quoted",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request tutoring",
+      "quotePrompt": "Tell us the class/topic, current skill level, goals, timeline, and whether the support is for labs, portfolio, CTF, or capstone planning.",
+      "complianceNote": "Tutoring is educational and ethical. It does not include cheating, bypassing school systems, or unauthorized activity.",
+      "features": [
+        "Student-friendly explanations",
+        "Lab and portfolio guidance",
+        "CTF practice support",
+        "Ethical hacking foundations"
+      ]
+    },
+    {
+      "id": 224,
+      "productCode": "CYB-OSINT",
+      "slug": "osint-scam-documentation-reporting",
+      "name": "OSINT, Scam Documentation, and Reporting Support",
+      "shortName": "Scam Documentation",
+      "description": "Support for documenting scams, suspicious online behavior, public-source findings, and report-ready evidence packets.",
+      "priceCents": 0,
+      "priceLabel": "$150+",
+      "pricingModel": "quote",
+      "type": "service",
+      "status": "quoted",
+      "categories": [
+        "Cybersecurity solutions"
+      ],
+      "quoteCta": "Request documentation support",
+      "quotePrompt": "Tell us what happened, what public evidence exists, what platforms are involved, and what report output is needed.",
+      "complianceNote": "No doxxing, harassment, stalking, unauthorized access, or illegal surveillance.",
+      "features": [
+        "Evidence organization",
+        "Timeline construction",
+        "Public-source review",
+        "Reporting checklist"
+      ]
+    },
+    {
+      "id": 225,
+      "productCode": "CYB-OPSEC-KIT",
+      "slug": "opsec-checklist-template",
+      "name": "OPSEC Checklist Template",
+      "shortName": "OPSEC Checklist",
+      "description": "Structured operational-security checklist for identity separation, alias tracking, account hygiene, device security, browser hygiene, metadata awareness, and social media safety.",
+      "priceCents": 2900,
+      "priceLabel": "$29+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add template to cart",
+      "quotePrompt": "Tell us if you need a customized version for personal, student, creator, or business use.",
+      "complianceNote": "Template guidance only. Does not guarantee anonymity or legal protection.",
+      "features": [
+        "Alias tracking section",
+        "Account hygiene checklist",
+        "Metadata awareness",
+        "Threat modeling prompts"
+      ]
+    },
+    {
+      "id": 226,
+      "productCode": "CYB-AUDIT-TPL",
+      "slug": "security-audit-template",
+      "name": "Security Audit Template",
+      "shortName": "Audit Template",
+      "description": "Professional template for documenting assets, risks, vulnerabilities, controls, findings, impact, likelihood, remediation status, and follow-up actions.",
+      "priceCents": 4900,
+      "priceLabel": "$49+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add template to cart",
+      "quotePrompt": "Tell us if you need a customized branded version.",
+      "complianceNote": "Template only. Professional judgment is required for real audits.",
+      "features": [
+        "Asset inventory section",
+        "Risk scoring fields",
+        "Remediation tracking",
+        "Executive summary structure"
+      ]
+    },
+    {
+      "id": 227,
+      "productCode": "CYB-PENTEST-TPL",
+      "slug": "penetration-test-scope-report-template",
+      "name": "Penetration Test Scope and Report Template",
+      "shortName": "Pentest Report Template",
+      "description": "Documentation package including authorization, scope, rules of engagement, methodology, findings format, risk ratings, remediation tracking, and final report structure.",
+      "priceCents": 7900,
+      "priceLabel": "$79+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add template to cart",
+      "quotePrompt": "Tell us if you need a custom branded version for a class, portfolio, or small consulting workflow.",
+      "complianceNote": "Template does not authorize testing. Written permission is still required.",
+      "features": [
+        "Authorization section",
+        "Rules of engagement",
+        "Findings format",
+        "Remediation tracker"
+      ]
+    },
+    {
+      "id": 228,
+      "productCode": "CYB-SMB-KIT",
+      "slug": "small-business-cyber-defense-starter-kit",
+      "name": "Small Business Cyber Defense Starter Kit",
+      "shortName": "Cyber Defense Starter Kit",
+      "description": "Bundled checklist and implementation package for small businesses that need practical security without enterprise complexity.",
+      "priceCents": 14900,
+      "priceLabel": "$149+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add starter kit to cart",
+      "quotePrompt": "Tell us if you need implementation support or a customized version.",
+      "complianceNote": "Digital kit is guidance; implementation support is quoted separately.",
+      "features": [
+        "Password/MFA checklist",
+        "Backup checklist",
+        "Incident one-pager",
+        "Network security checklist"
+      ]
+    },
+    {
+      "id": 229,
+      "productCode": "CYB-HARDEN-PLAY",
+      "slug": "windows-linux-hardening-playbook",
+      "name": "Windows and Linux Hardening Playbook",
+      "shortName": "Hardening Playbook",
+      "description": "Step-by-step defensive hardening guide for Windows 11 and Linux systems.",
+      "priceCents": 9900,
+      "priceLabel": "$99+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add playbook to cart",
+      "quotePrompt": "Tell us if you need a custom environment version.",
+      "complianceNote": "Guidance must be adapted to your environment and backup plan.",
+      "features": [
+        "Account hardening",
+        "Firewall basics",
+        "Logging basics",
+        "Backup recommendations"
+      ]
+    },
+    {
+      "id": 230,
+      "productCode": "CYB-GH-KIT",
+      "slug": "github-security-hygiene-kit",
+      "name": "GitHub Security Hygiene Kit",
+      "shortName": "GitHub Hygiene Kit",
+      "description": "Security kit for developers and students publishing code online, including gitignore, secret scanning, pre-commit checks, and release-readiness notes.",
+      "priceCents": 7900,
+      "priceLabel": "$79+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add hygiene kit to cart",
+      "quotePrompt": "Tell us if you want a walkthrough or repository setup.",
+      "complianceNote": "Do not include secrets in support requests.",
+      "features": [
+        "Secret-scanning workflow",
+        "Gitignore checklist",
+        "Pre-commit checklist",
+        "Release checklist"
+      ]
+    },
+    {
+      "id": 231,
+      "productCode": "CYB-LAB-BLUE",
+      "slug": "purple-team-lab-blueprint",
+      "name": "Purple-Team Lab Blueprint",
+      "shortName": "Lab Blueprint",
+      "description": "Safe lab-design blueprint for ethical hacking, blue-team monitoring, CTF training, and cybersecurity portfolio development.",
+      "priceCents": 14900,
+      "priceLabel": "$149+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add blueprint to cart",
+      "quotePrompt": "Tell us if you need a custom lab design.",
+      "complianceNote": "Labs should be isolated and used only for authorized learning.",
+      "features": [
+        "Lab topology",
+        "VM recommendations",
+        "Safe testing boundaries",
+        "Portfolio documentation template"
+      ]
+    },
+    {
+      "id": 232,
+      "productCode": "CYB-IR-BINDER",
+      "slug": "incident-response-binder",
+      "name": "Incident Response Binder",
+      "shortName": "IR Binder",
+      "description": "Practical incident response packet for individuals and small businesses with intake forms, timelines, evidence checklists, recovery steps, and post-incident review.",
+      "priceCents": 9900,
+      "priceLabel": "$99+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add binder to cart",
+      "quotePrompt": "Tell us if you need a customized business binder.",
+      "complianceNote": "Not a substitute for legal counsel or certified forensic services.",
+      "features": [
+        "Incident intake form",
+        "Evidence checklist",
+        "Recovery checklist",
+        "Post-incident review"
+      ]
+    },
+    {
+      "id": 233,
+      "productCode": "CYB-STUDENT-ROAD",
+      "slug": "cybersecurity-student-roadmap-pack",
+      "name": "Cybersecurity Student Roadmap Pack",
+      "shortName": "Student Roadmap",
+      "description": "Student-focused roadmap for learning cybersecurity, building labs, documenting projects, improving GitHub, preparing for CTFs, and developing a portfolio.",
+      "priceCents": 9900,
+      "priceLabel": "$99+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add roadmap pack to cart",
+      "quotePrompt": "Tell us if you need a custom student plan.",
+      "complianceNote": "Educational support only. Does not include dishonest academic assistance.",
+      "features": [
+        "Learning roadmap",
+        "Lab checklist",
+        "CTF tracker",
+        "Portfolio project ideas"
+      ]
+    },
+    {
+      "id": 234,
+      "productCode": "CYB-LAUNCH",
+      "slug": "secure-software-launch-checklist",
+      "name": "Secure Software Launch Checklist",
+      "shortName": "Launch Checklist",
+      "description": "Pre-release security checklist for websites, small apps, APIs, scripts, and public GitHub projects.",
+      "priceCents": 7900,
+      "priceLabel": "$79+",
+      "pricingModel": "fixed",
+      "type": "software",
+      "status": "available",
+      "categories": [
+        "Cybersecurity solutions",
+        "Software solutions"
+      ],
+      "quoteCta": "Add checklist to cart",
+      "quotePrompt": "Tell us if you need a custom launch review.",
+      "complianceNote": "Checklist guidance only; production review may require a quoted service.",
+      "features": [
+        "Secrets check",
+        "Dependency check",
+        "Authentication review",
+        "Deployment checklist"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "title": "Hardware + Embedded Systems",
+      "description": "Prototype planning, controller boards, embedded device support, component sourcing, enclosure planning, and deployment guidance."
+    },
+    {
+      "title": "Industrial + Manufacturing Support",
+      "description": "Motor systems, water cooling blocks, apparatus support, controls, fixtures, and quote-based manufacturing direction."
+    },
+    {
+      "title": "Software Solutions",
+      "description": "Dashboards, automation, workflow tooling, quote intake systems, internal utilities, and platform/API planning."
+    },
+    {
+      "title": "Technical Consulting",
+      "description": "Architecture reviews, sourcing strategies, feasibility reviews, cost/risk planning, and technical roadmap support."
+    },
+    {
+      "title": "Cybersecurity Solutions",
+      "description": "Authorized security audits, scoped penetration testing, defensive tooling, security documentation, and custom software support."
+    }
+  ],
+  "terminalLines": [
+    "load customer_scope.interface",
+    "sync product_lanes.catalog",
+    "prime quote_request.gateway",
+    "verify payment_options.ready",
+    "route support_followup.queue",
+    "status: public interface online"
+  ],
+  "btc": {
+    "network": "Bitcoin mainnet",
+    "mode": "Manual confirmation after quote approval",
+    "notice": "BTC checkout starts as a manual invoice flow after a quote is approved. No private keys, seed phrases, or wallet credentials are stored in this website."
+  },
+  "resources": [
+    {
+      "title": "Small Business Security Checklist",
+      "description": "Start with MFA, password manager adoption, backups, update hygiene, account recovery review, and clear incident reporting steps.",
+      "tags": [
+        "Small Business",
+        "MFA",
+        "Backups"
+      ]
+    },
+    {
+      "title": "GitHub Security Hygiene",
+      "description": "Use gitignore rules, secret scanning, branch protection where appropriate, and pre-release checks before publishing code.",
+      "tags": [
+        "Developers",
+        "GitHub",
+        "Secrets"
+      ]
+    },
+    {
+      "title": "Student Cybersecurity Roadmap",
+      "description": "Build a safe lab, document projects, practice CTFs ethically, learn Linux/networking basics, and publish clean writeups.",
+      "tags": [
+        "Students",
+        "Labs",
+        "Portfolio"
+      ]
+    },
+    {
+      "title": "Incident Response First Steps",
+      "description": "Preserve evidence, change passwords from a clean device, enable MFA, document the timeline, and avoid deleting artifacts too early.",
+      "tags": [
+        "Incident Response",
+        "Evidence",
+        "Recovery"
+      ]
+    }
+  ]
+}

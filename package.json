@@ -1,0 +1,31 @@
+{
+  "name": "aig-website",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "pages:dev": "npm run build && wrangler pages dev ./dist",
+    "pages:deploy": "npm run build && wrangler pages deploy ./dist --project-name american-innovations-group",
+    "db:local": "wrangler d1 execute aig_db --local --file=./schema/schema.sql && wrangler d1 execute aig_db --local --file=./schema/seeds.sql",
+    "db:remote": "wrangler d1 execute aig_db --remote --file=./schema/schema.sql && wrangler d1 execute aig_db --remote --file=./schema/seeds.sql",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "6.0.2",
+    "vite": "8.0.13",
+    "typescript": "6.0.3",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-router-dom": "7.15.1",
+    "lucide-react": "1.16.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20260518.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "wrangler": "4.92.0"
+  }
+}

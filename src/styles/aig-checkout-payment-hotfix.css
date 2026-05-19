@@ -1,0 +1,97 @@
+/*
+  Final checkout payment polish.
+  Improves public-facing PayPal language, provider contrast, navigation, and cart reset controls.
+*/
+
+.checkout-navigation-bar,
+.checkout-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+.checkout-navigation-bar .retro-button,
+.checkout-action-row .retro-button {
+  min-height: 42px;
+  width: auto;
+}
+
+.paypal-primary-action strong,
+.paypal-embedded-details summary {
+  letter-spacing: 0.08em;
+}
+
+.paypal-primary-action p,
+.paypal-embedded-details p,
+.method-detail-card p,
+.small-muted {
+  color: #d7e7f4;
+  font-weight: 650;
+}
+
+.paypal-provider-surface {
+  background:
+    linear-gradient(180deg, rgba(248, 252, 255, 0.98), rgba(230, 239, 248, 0.96));
+  border: 1px solid rgba(205, 226, 242, 0.95);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.72) inset,
+    0 14px 34px rgba(0, 0, 0, 0.22);
+  color: #0d2238;
+  margin-top: 14px;
+  padding: 14px;
+}
+
+.paypal-provider-surface .paypal-smart-buttons {
+  background: #f7fbff;
+  border: 1px solid rgba(35, 78, 115, 0.22);
+  color: #0d2238;
+  margin-top: 0;
+}
+
+.paypal-provider-surface iframe,
+.paypal-smart-buttons iframe {
+  background: #ffffff !important;
+  color-scheme: light;
+  filter: none !important;
+}
+
+.paypal-provider-surface .paypal-render-warning {
+  background: #fff7e8;
+  border-color: #e2a348;
+  color: #5e3b00;
+}
+
+.form-status {
+  color: #7ec8ff;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.invoice-box input,
+.invoice-box textarea,
+.invoice-box select {
+  font-weight: 750;
+}
+
+.empty-state.compact p {
+  color: #d7e7f4;
+  font-weight: 650;
+}
+
+@media (max-width: 700px) {
+  .checkout-navigation-bar,
+  .checkout-action-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-navigation-bar .retro-button,
+  .checkout-action-row .retro-button {
+    width: 100%;
+  }
+
+  .paypal-provider-surface {
+    padding: 10px;
+  }
+}

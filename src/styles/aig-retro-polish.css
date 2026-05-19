@@ -1,0 +1,278 @@
+/*
+  AIG early-2000s public frontend polish.
+  Direction: softer retro web texture, organized panels, interactive hover states,
+  nostalgic motion, and professional public-facing readability.
+*/
+
+/* ---------- Theme texture and base readability ---------- */
+:root {
+  --aig-cream: #d8e6ec;
+  --aig-panel: rgba(5, 14, 24, 0.82);
+  --aig-line: rgba(126, 192, 238, 0.26);
+  --aig-blue: #7ec8ff;
+  --aig-green: #9df7c4;
+  --aig-muted: #93aab7;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(90, 160, 220, 0.16), transparent 32rem),
+    radial-gradient(circle at bottom right, rgba(95, 255, 190, 0.08), transparent 28rem),
+    linear-gradient(135deg, rgba(255,255,255,0.018) 25%, transparent 25%) 0 0 / 6px 6px,
+    linear-gradient(180deg, #06111e 0%, #03070d 55%, #02050a 100%) !important;
+  color: var(--aig-cream);
+}
+
+/* Soft scanline overlay: texture without making the site hard to read. */
+body::before {
+  animation: aig-scanlines 10s linear infinite;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.025) 0,
+    rgba(255,255,255,0.025) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  content: "";
+  inset: 0;
+  opacity: 0.26;
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+}
+
+/* ---------- Shell and panel organization ---------- */
+.app-shell,
+.site-shell,
+main,
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+.retro-panel,
+.invoice-box,
+.card,
+.product-card,
+.service-card {
+  backdrop-filter: blur(3px);
+  border-color: var(--aig-line) !important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.025) inset,
+    0 18px 42px rgba(0,0,0,0.34),
+    0 0 24px rgba(126,200,255,0.055);
+}
+
+.retro-panel::before,
+.invoice-box::before,
+.product-card::before {
+  background: linear-gradient(90deg, transparent, rgba(126,200,255,0.22), transparent);
+  content: "";
+  display: block;
+  height: 1px;
+  margin: -1px -1px 12px;
+}
+
+/* ---------- Text hierarchy cleanup ---------- */
+.section-intro {
+  max-width: 920px;
+}
+
+.section-intro h1 {
+  letter-spacing: 0.02em;
+  line-height: 1.04;
+  text-shadow: 0 0 18px rgba(126,200,255,0.18);
+}
+
+.section-intro p,
+.invoice-box p,
+.product-card p,
+.service-card p {
+  color: var(--aig-muted);
+  line-height: 1.64;
+}
+
+.eyebrow {
+  color: var(--aig-green) !important;
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* ---------- Buttons and links ---------- */
+.retro-button,
+button.retro-button,
+a.retro-button {
+  border-radius: 2px !important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.05) inset,
+    0 0 18px rgba(126,200,255,0.12);
+  letter-spacing: 0.06em;
+  position: relative;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.retro-button:hover,
+button.retro-button:hover,
+a.retro-button:hover {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.1) inset,
+    0 0 26px rgba(126,200,255,0.24);
+  transform: translateY(-1px);
+}
+
+.retro-button:active {
+  transform: translateY(0);
+}
+
+/* ---------- Checkout organization and dynamic payment cards ---------- */
+.checkout-hero {
+  border-left: 3px solid var(--aig-blue);
+  padding-left: 16px;
+}
+
+.checkout-layout {
+  align-items: start;
+}
+
+.checkout-status-rail span {
+  animation: aig-status-pulse 4s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+.payment-method-grid {
+  gap: 10px;
+}
+
+.payment-method-card {
+  background: linear-gradient(180deg, rgba(14,34,52,0.82), rgba(4,12,20,0.88)) !important;
+  border: 1px solid rgba(126,200,255,0.24) !important;
+  border-radius: 2px !important;
+  min-height: 112px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+
+.payment-method-card::after {
+  background: linear-gradient(90deg, transparent, rgba(157,247,196,0.16), transparent);
+  content: "";
+  height: 100%;
+  left: -120%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-18deg);
+  transition: left 380ms ease;
+  width: 60%;
+}
+
+.payment-method-card:hover {
+  border-color: rgba(157,247,196,0.48) !important;
+  box-shadow: 0 0 24px rgba(126,200,255,0.12);
+  transform: translateY(-2px);
+}
+
+.payment-method-card:hover::after {
+  left: 140%;
+}
+
+.payment-method-card.active {
+  border-color: var(--aig-green) !important;
+  box-shadow:
+    0 0 0 1px rgba(157,247,196,0.16) inset,
+    0 0 30px rgba(157,247,196,0.12);
+}
+
+.payment-method-card.limited {
+  filter: grayscale(0.25);
+  opacity: 0.72;
+}
+
+.payment-method-card img {
+  image-rendering: auto;
+  max-height: 28px;
+}
+
+.method-detail-card,
+.paypal-smart-buttons,
+.fallback-details {
+  border-radius: 2px;
+}
+
+/* ---------- Forms and status messages ---------- */
+input,
+textarea,
+select {
+  border-radius: 2px !important;
+  transition: border-color 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: rgba(157,247,196,0.56) !important;
+  box-shadow: 0 0 0 3px rgba(157,247,196,0.08);
+  outline: none;
+}
+
+.form-status {
+  animation: aig-terminal-blink 2.6s ease-in-out infinite;
+  border-left: 3px solid var(--aig-green);
+}
+
+/* ---------- Legal/content readability ---------- */
+.legal-copy {
+  color: var(--aig-muted);
+  max-width: 980px;
+}
+
+.legal-copy h3 {
+  color: var(--aig-blue);
+  margin-top: 26px;
+}
+
+/* ---------- Mobile polish ---------- */
+@media (max-width: 760px) {
+  .section-intro h1 {
+    font-size: clamp(2rem, 12vw, 3.35rem);
+  }
+
+  .payment-method-card {
+    min-height: 96px;
+  }
+
+  .checkout-hero {
+    border-left-width: 2px;
+    padding-left: 12px;
+  }
+}
+
+/* ---------- Motion keyframes ---------- */
+@keyframes aig-scanlines {
+  from { transform: translateY(0); }
+  to { transform: translateY(12px); }
+}
+
+@keyframes aig-status-pulse {
+  0%, 100% { opacity: 0.82; }
+  50% { opacity: 1; }
+}
+
+@keyframes aig-terminal-blink {
+  0%, 100% { box-shadow: 0 0 0 rgba(157,247,196,0); }
+  50% { box-shadow: 0 0 18px rgba(157,247,196,0.12); }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}

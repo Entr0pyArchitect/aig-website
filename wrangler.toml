@@ -1,0 +1,26 @@
+# Cloudflare Pages configuration for American Innovations Group.
+# Keep public, non-sensitive config here only.
+# Store secrets in Cloudflare Pages → Settings → Variables and Secrets
+# and in local .dev.vars for development.
+
+name = "american-innovations-group"
+compatibility_date = "2026-05-18"
+pages_build_output_dir = "./dist"
+
+[vars]
+PUBLIC_SITE_NAME = "American Innovations Group"
+PUBLIC_MOTTO = "Engineering Art"
+
+# Public payment display/config values.
+BTC_NETWORK = "Bitcoin mainnet"
+BTC_CONFIRMATIONS_REQUIRED = "1"
+PUBLIC_PAYPAL_PAYMENT_LINK = "https://www.paypal.com/ncp/payment/3XBBELN7YCEDS"
+VITE_PAYPAL_PAYMENT_LINK = "https://www.paypal.com/ncp/payment/3XBBELN7YCEDS"
+
+# Production-only sensitive values are managed in Cloudflare Pages settings.
+# Local development-only values are kept in .dev.vars.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "aig_db"
+database_id = "778b3bee-5d33-47a9-a17a-042c53ac86e4"
