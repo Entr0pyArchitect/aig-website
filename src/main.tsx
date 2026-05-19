@@ -11,6 +11,8 @@ import "./styles/aig-retro-polish.css";
 import "./styles/aig-payment-visuals.css";
 import "./styles/aig-responsive-device-fit.css";
 import "./styles/aig-page-header-slimming.css";
+import "./styles/aig-checkout-payment-hotfix.css";
+import "./styles/aig-final-live-polish.css";
 
 /*
   Frontend application bootstrap.

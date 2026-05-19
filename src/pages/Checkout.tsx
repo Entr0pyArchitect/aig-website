@@ -413,14 +413,16 @@ export function Checkout() {
             <details className="paypal-embedded-details" open>
               <summary>Embedded PayPal buttons</summary>
               <p className="small-muted">If the buttons below are visible, you can approve the same order directly from this page. If your browser blocks them, use hosted checkout above.</p>
-              <PayPalSmartButtons
-                orderId={paypalOrder.paypal_order_id}
-                ticketNumber={paypalOrder.ticket_number}
-                onStatus={setStatus}
-                onApproved={(approvedStatus: TicketStatus) => {
-                  setPayPalOrder((current) => current ? { ...current, ticket_status: approvedStatus } : current);
-                }}
-              />
+              <div className="paypal-provider-surface" aria-label="Secure PayPal embedded checkout surface">
+                <PayPalSmartButtons
+                  orderId={paypalOrder.paypal_order_id}
+                  ticketNumber={paypalOrder.ticket_number}
+                  onStatus={setStatus}
+                  onApproved={(approvedStatus: TicketStatus) => {
+                    setPayPalOrder((current) => current ? { ...current, ticket_status: approvedStatus } : current);
+                  }}
+                />
+              </div>
             </details>
           </section>
         )}
